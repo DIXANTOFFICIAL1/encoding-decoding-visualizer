@@ -1,0 +1,40 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body {
+font-family: Arial, sans-serif;
+background-color: #d81919;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;}
+.container {
+background-color: #e95b2b;
+padding: 20px;
+box-shadow: 0 0 10px rgba(6, 4, 4, 0.1);
+border-radius: 8px;
+width: 400px;
+}
+h2 {
+margin-bottom: 20px;}
+label, input, button, select {
+display: block;
+width: 100%;
+margin-bottom: 15px;}
+.output {
+margin-top: 20px;
+padding: 10px;
+background-color: #f1eaea;
+border-radius: 8px;
+}
+.output div {
+margin-bottom: 10px;}
+.animated-step {
+opacity: 0;
+animation: showStep 1s forwards;
+}
+@keyframes showStep {
+to {
+opacity: 1;}
+}
