@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base32, Base64, and Base85 Encoding & Decoding</title>
+<link rel="stylesheet" href="230103029-lab-8-encoding.css">
+</head>
+<body>
+<div class="container">
+<strong>encoding & decoding base (32,64&85)</strong>
+<form id="encode-form">
+<label for="inputString">Enter text to encode:</label>
+<input type="text" id="inputString" name="inputString" required>
+<label for="encodingScheme">Choose encoding scheme -</label>
+
+<select id="encodingScheme" name="encodingScheme">
+<option value="base32">Base32</option>
+
+<option value="base64">base64</option>
+<option value="base85">Base85</option>
+</select>
+<button type="submit">Encode</button>
+</form>
+<script src="230103029-lab-8-encoding.js"></script>
+<div id="encoding-steps" class="output">
+<h2>Encoding Steps -</h2>
+<div id="steps"></div>
+<div id="encoded-output"></div>
+</div>
+<button id="decode-button" style="display: none;">Decode</button>
+<div id="decoding-steps" class="output" style="display: none;">
+<h2>Decoding Steps:</h2>
+<div id="decode-steps"></div>
+<div id="decoded-output"></div>
+</div>
+</div>
+</body>
+</html>
